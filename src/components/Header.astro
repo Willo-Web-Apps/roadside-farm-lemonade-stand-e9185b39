@@ -1,11 +1,25 @@
 ---
 ---
-<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/80 backdrop-blur-lg">
+<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/85 backdrop-blur-lg">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="/" class="text-lg font-bold tracking-tight text-surface-900 font-display">Your New Business</a>
-    <div class="flex items-center gap-6">
-      <a href="/blog" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Blog</a>
-      <a href="#cta" class="text-sm font-semibold bg-brand-500 text-white px-4 py-2 rounded-lg hover:bg-brand-600 transition-colors">Get Started</a>
+    <a href="/" class="flex items-center gap-2.5 group">
+      <!-- Egg + sun icon -->
+      <div class="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style="background: oklch(0.90 0.13 85);">
+        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none">
+          <ellipse cx="10" cy="11" rx="5.5" ry="7" fill="oklch(0.72 0.19 78)"/>
+          <ellipse cx="10" cy="10.5" rx="4.5" ry="6" fill="oklch(0.80 0.18 82)" opacity="0.7"/>
+        </svg>
+      </div>
+      <span class="text-lg font-bold tracking-tight text-surface-900 font-display group-hover:text-brand-600 transition-colors">
+        Sunny Side Stand
+      </span>
+    </a>
+    <div class="flex items-center gap-5">
+      <a href="#what-we-sell" class="hidden sm:block text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">What We Sell</a>
+      <a href="#find-us" class="hidden sm:block text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Find Us</a>
+      <a href="#cta" class="text-sm font-semibold px-4 py-2 rounded-lg text-white hover:bg-brand-600 transition-colors" style="background: oklch(0.72 0.19 78);">
+        Stop By Today
+      </a>
     </div>
   </nav>
 </header>

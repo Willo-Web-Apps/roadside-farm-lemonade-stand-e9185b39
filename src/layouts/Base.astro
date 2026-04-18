@@ -8,7 +8,10 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "Rural egg farm kids lemonade stand thingy beside the busy road" } = Astro.props;
+const {
+  title = "Sunny Side Stand — Farm-Fresh Eggs & Lemonade",
+  description = "Stop by our roadside farm stand for freshly gathered eggs and hand-squeezed lemonade. Run by the kids of Clover Hill Farm on Route 9."
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -22,10 +25,16 @@ const { title = "Your New Business", description = "Rural egg farm kids lemonade
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Your New Business",
-      "description": "Rural egg farm kids lemonade stand thingy beside the busy road",
-      "url": "https://roadside-farm-lemonade-stand.onrender.com"
+      "@type": "LocalBusiness",
+      "name": "Sunny Side Stand",
+      "description": "Farm-fresh eggs and hand-squeezed lemonade sold at a roadside stand by the kids of Clover Hill Farm.",
+      "url": "https://roadside-farm-lemonade-stand.onrender.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Route 9, Mile Marker 14"
+      },
+      "openingHours": ["Mo-Fr 15:00-18:00", "Sa-Su 09:00-13:00"],
+      "priceRange": "$"
     }
     </script>
   </head>

@@ -1,11 +1,29 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
+<footer class="border-t border-surface-200 bg-surface-100 py-12 mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <div>
+        <p class="text-base font-bold text-surface-900 font-display flex items-center gap-2">
+          <!-- Tiny egg icon -->
+          <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none">
+            <ellipse cx="10" cy="12" rx="6" ry="7.5" fill="oklch(0.72 0.19 78)"/>
+            <ellipse cx="10" cy="11" rx="5" ry="6.5" fill="oklch(0.80 0.18 82)" opacity="0.6"/>
+          </svg>
+          Sunny Side Stand
+        </p>
+        <p class="text-sm text-surface-800/50 mt-1">Clover Hill Farm &middot; Route 9, mile marker 14 &middot; Open daily</p>
+      </div>
+      <div class="flex flex-col sm:flex-row sm:items-center gap-4 text-sm text-surface-800/50">
+        <span>Weekdays 3–6 PM &middot; Weekends 9 AM–1 PM</span>
+        <span class="hidden sm:inline">&middot;</span>
+        <a href="mailto:hello@cloverhillstand.com" class="hover:text-surface-900 transition-colors">hello@cloverhillstand.com</a>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 border-t border-surface-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <p class="text-xs text-surface-800/40">&copy; {year} Sunny Side Stand at Clover Hill Farm. All rights reserved.</p>
+      <p class="text-xs text-surface-800/40 italic font-display">"Fresh eggs, cold lemonade, happy kids."</p>
     </div>
   </div>
 </footer>
